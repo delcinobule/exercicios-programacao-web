@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      <!DOCTYPE html> <html lang="pt"> <head> <meta charset="UTF-8" /> <meta
+      name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Formulário de Inscrição em Evento
+    </title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="nav-bar" id="nav-event">
+      <h2>Evento</h2>
+      <ul>
+        <li><a href="form-pizza.html">Pizza</a></li>
+        <li><a href="form-usuario.html">Usuário</a></li>
+        <li><a href="form-producto.html">Productos</a></li>
+        <li><a href="form-upload.html">Upload</a></li>
+      </ul>
+    </nav>
+
+    <header id="h-event">
+      <h1 class="texto-principal" id="texto-pizza">
+        Formulário de Inscrição em Evento
+      </h1>
+      <div class="shadow"></div>
+    </header>
+
+    <section>
+      <form action="" id="form-group-event">
+        <fieldset>
+          <legend>Dados</legend>
+          <div class="input-inline">
+            <label for="name">Nome Completo</label>
+            <input type="text" name="name" id="name" required />
+          </div>
+          <div class="input-inline">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required />
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Participação</legend>
+          <div class="form-group">
+            <label for="event-participation">Tipo de Participação</label>
+            <select name="piz-size" id="event-participation" required>
+              <option value="Palestrante">Palestrante</option>
+              <option value="Participante">Participante</option>
+              <option value="Voluntario">Voluntário</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="email">Número de Acompanhate</label>
+            <input type="number" name="email" id="email" required />
+          </div>
+        </fieldset>
+
+        <fieldset class="field-block">
+          <legend>Requisitos</legend>
+          <div class="radio-block">
+            <input
+              type="checkbox"
+              name="pizza-sabor"
+              id="tomate"
+              value="Tomate"
+            />
+            <label for="tomate">Requisitos Alimentares</label>
+          </div>
+          <div class="radio-block">
+            <input
+              type="checkbox"
+              name="pizza-sabor"
+              id="azeitona"
+              value="azeitona"
+            />
+            <label for="azeitona">Vegano</label>
+          </div>
+          <div class="radio-block">
+            <input
+              type="checkbox"
+              name="pizza-sabor"
+              id="cebola"
+              value="cebola"
+            />
+            <label for="cebola">Sem Restrições</label>
+          </div>
+        </fieldset>
+
+        <button type="submit">Enviar Inscrição</button>
+      </form>
+    </section>
+    <footer id="footer-event">
+      <p>Copywrite &copy; Todos Direitos Reservados - 2025</p>
+    </footer>
+  </body>
+</html>

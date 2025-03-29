@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Artshot Designer | Fotografia & Edição de Vídeos</title>
+  <meta name="description" content="Artshot é uma empresa de designer gráfico" />
+  <link rel="stylesheet" href="/styles/style.css" />
+  <link rel="stylesheet" href="styles/dark-mode.css">
+  <link rel="stylesheet" media="screen and (max-width: 768px)" href="/styles/mobile.css" />
+  <link rel="stylesheet" media="screen and (min-width: 1100px)" href="/styles/widescreen.css" />
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav id="navbar">
+    <h1 class="logo">
+      <!-- <span class="text-primary"> <i class="fas fa-pen-nib"></i>Art</span>Shot -->
+      <img src="images/cept-white.png" width="60%" alt="cept logo" />
+    </h1>
+    <!-- <div>
+      </div> -->
+
+    <ul class="menu-burguer-container show">
+      <li><a href="/">Home</a></li>
+      <li><a href="#services">Serviços</a></li>
+      <li><a href="#about">Sobre</a></li>
+      <li><a href="#contact">Contacto</a></li>
+      <label>Tema
+        <select data-theme-picker name="themepicker" id="theme" class="btn py-1">
+          <option value="💻">System</option>
+          <option value="☀️">Light</option>
+          <option value="🌑">Dark</option>
+          <option value="🙃">Don't pick</option>
+        </select>
+      </label>
+      <!-- <button class="btn" onclick="darkMode()">Dark Mode</button> -->
+    </ul>
+    <div>
+      <i class="fas fa-bars fa-2x menu-burguer"></i>
+    </div>
+  </nav>
+
+
+
+  <!-- Header e Showcase -->
+  <header id="showcase">
+    <div class="showcase-content">
+      <h1 class="l-heading">Centro Educacional Para Todos</h1>
+      <p class="lead">
+        Aprenda com os profissionais na área de ensino com uma vasta
+        experiência comprovada e moldando o sistema de aprendizado dos nossos
+        alunos.
+      </p>
+      <a href="#services" class="btn">Saber Mais</a>
+    </div>
+  </header>
+
+  <!-- Secção: O que nós fazemos -->
+  <section id="services" class="bg-light py-1">
+    <div class="container">
+      <h2 class="m-heading text-center">
+        <span class="text-primary">O Que</span> Nós Fazemos
+      </h2>
+
+      <div class="items">
+        <div class="item">
+          <i class="fas fa-computer fa-2x"></i>
+          <div>
+            <h3>Tecnologia</h3>
+            <p>
+              Explore a dinânica da tecnologia para seus estudos.
+            </p>
+          </div>
+        </div>
+        <div class="item">
+          <i class="fas fa-pen fa-2x"></i>
+          <div>
+            <h3>Escrita</h3>
+            <p>
+              Não basta só escrever, é preciso saber como escrever. Venha e aprenda connosco.
+            </p>
+          </div>
+        </div>
+        <div class="item">
+          <i class="fas fa-book fa-2x"></i>
+          <div>
+            <h3>Leitura</h3>
+            <p>
+              Uma perfeita leitura libera o verdadeiro enttendimento e conhecimento.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Secção: Que somos nós -->
+  <section id="about">
+    <div class="about-img"></div>
+
+    <div class="about-text bg-dark p-2">
+      <h2 class="m-heading">
+        <span class="text-primary">Quem</span> Somos Nós
+      </h2>
+      <p>
+        Somos uma entidade prestadora de serviços no ensino para jovens e crianças em todo nível do SNE(Sistema Nacional
+        de Educação).
+      </p>
+      <h3><span class="text-primary">Vantagens</span> do Ensino</h3>
+      <ul class="list">
+        <li>Aprendizado dinâmico;</li>
+        <li>Exploração de tecnologias para
+          auxiliar nos estudos;</li>
+        <li>Auxílio na realização de traballhos;</li>
+        <li>Kendra Anabel: Gestor de Editores de Vídeo</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Secção: Nossos Clientes -->
+  <section id="clients" class="py-1">
+    <div class="container">
+      <h2 class="m-heading text-center">
+        <span class="text-primary">Nossos</span> Conteúdos
+      </h2>
+      <div class="items  py-1">
+        <img src="./images/books/9a hist.png" alt="Client" />
+        <img src="./images/books/12a-mt.png" alt="Client" />
+        <img src="./images/books/12a-pt.png" alt="Client" />
+        <img src="./images/books/1a-pt.png" alt="Client" />
+        <img src="./images/books/5a-mt.png" alt="Client" />
+  
+      </div>
+  </section>
+
+  <!-- Secção: Contacto e Localização -->
+  <section id="contact">
+    <div class="contact-form bg-primary p-2">
+      <h2 class="m-heading">Contacte-nos</h2>
+      <p>Por favor use o formulário abaixo para poder nos contactar</p>
+      <form action="">
+        <div class="form-group">
+          <label for="name">Nome</label>
+          <input type="text" name="name" id="name" placeholder="Digite o seu nome" />
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" placeholder="Digite o seu email" />
+        </div>
+        <div class="form-group">
+          <label for="phone">Número de Telefone</label>
+          <input type="text" name="phone" id="phone" placeholder="Digite o seu telefone" />
+        </div>
+        <div class="form-group">
+          <label for="message">Mensagem</label>
+          <textarea type="text" name="message" id="message" placeholder="Digite o sua mensagem"></textarea>
+        </div>
+        <div class="form-group">
+          <input type="submit" value="Enviar">
+        </div>
+      </form>
+    </div>
+    <div class="map">
+      <div class="gmap_canvas">
+        <iframe class="gmap_iframe" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d61311.36585990185!2d33.55929305726576!3d-16.170994100316147!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x192647de57155ae1%3A0x1ff9e86c75c6e8b!2sShoprite%20Tete%20Mall!5e0!3m2!1spt-PT!2smz!4v1743149812329!5m2!1spt-PT!2smz"
+       ></iframe><a
+          href="https://gachanox.io/">Gacha Nox APK</a>
+      </div>
+    </div>
+  </section>
+  
+  <div class="wa-me">    
+    <a href="https://wa.me/258877297787"><i class="fa-brands fa-whatsapp"></i></a>
+  </div>
+
+  <!-- Footer -->
+  <footer id="main-footer" class="bg-dark text-center py-1">
+    <div class="container">
+      <p>
+        Copyright &copy; 2025, CEPT, Todos Direitos Reservados
+      </p>
+    </div>
+  </footer>
+
+
+  <script src="https://kit.fontawesome.com/77372d2e7f.js" crossorigin="anonymous">
+  </script>
+  <script src="script/dark-mode.js"></script>
+  <script>
+    let burguerMenu = document.querySelector(".menu-burguer")
+
+    let burguerContainer = document.querySelector(".menu-burguer-container")
+
+    let waMe = document.querySelector(".wa-me");
+
+    waMe.addEventListener("mouseenter", ()=>{
+      waMe.style.animationPlayState = "paused";
+    })
+    waMe.addEventListener("mouseleave", ()=>{
+      waMe.style.animationPlayState = "running";
+    })
+
+    burguerMenu.addEventListener("click", () => {
+      console.log(burguerContainer.classList)
+      
+      burguerContainer.classList.toggle("show")
+      // burguerContainer.classList.remove("none")
+      // burguerContainer.classList.add("block")
+    })
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,2 @@
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d61311.36585990185!2d33.55929305726576!3d-16.170994100316147!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x192647de57155ae1%3A0x1ff9e86c75c6e8b!2sShoprite%20Tete%20Mall!5e0!3m2!1spt-PT!2smz!4v1743149812329!5m2!1spt-PT!2smz" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
