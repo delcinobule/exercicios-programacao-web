@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="styles/dark-mode.css">
   <link rel="stylesheet" media="screen and (max-width: 768px)" href="/styles/mobile.css" />
   <link rel="stylesheet" media="screen and (min-width: 1100px)" href="/styles/widescreen.css" />
+  <link rel="shortcut icon" href="/images/cept-white.png" type="image/x-icon">
 </head>
 
 <body>
@@ -27,7 +28,7 @@
       <li><a href="#services">Serviços</a></li>
       <li><a href="#about">Sobre</a></li>
       <li><a href="#contact">Contacto</a></li>
-      <label>Tema
+      <label>
         <select data-theme-picker name="themepicker" id="theme" class="btn py-1">
           <option value="💻">System</option>
           <option value="☀️">Light</option>
@@ -270,10 +271,24 @@
   <script src="script/dark-mode.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
   <script>
+
     let burguerMenu = document.querySelector(".menu-burguer")
 
     let burguerContainer = document.querySelector(".menu-burguer-container")
 
+    // menu burguer
+    burguerMenu.addEventListener("click", () => {
+      // console.log(burguerContainer.classList)
+
+      // burguerContainer.classList.toggle("show")
+      // burguerContainer.classList.remove("none")
+      burguerContainer.style.display = 'block'
+    })
+    burguerContainer.addEventListener("click", () => {
+      burguerContainer.style.display = 'none'
+    })
+
+    // whatsapp
     let waMe = document.querySelector(".wa-me");
 
     waMe.addEventListener("mouseenter", () => {
@@ -283,13 +298,6 @@
       waMe.style.animationPlayState = "running";
     })
 
-    burguerMenu.addEventListener("click", () => {
-      console.log(burguerContainer.classList)
-
-      burguerContainer.classList.toggle("show")
-      // burguerContainer.classList.remove("none")
-      // burguerContainer.classList.add("block")
-    })
 
     // texto em digitacao
     let typed = new Typed(".auto-type", {

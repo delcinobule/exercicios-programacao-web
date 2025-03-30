@@ -159,6 +159,9 @@ p {
   align-items: center;
   list-style: none;
 }
+/* #navbar ul label{
+ 
+} */
 
 #navbar ul li a {
   color: var(--text-color);
@@ -211,7 +214,9 @@ p {
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.4);
 }
-
+#showcase .showcase-content h3{
+  margin-blocK: 2rem;
+}
 /* Section: What We Do */
 #services .items {
   display: flex;
