@@ -46,6 +46,10 @@ p {
   /* color: #ff1e00; */
   color: #057ac9;
 }
+.text-primary-bg {
+  color: #41a4e6;
+  color: #fff724;
+}
 
 .bg-light {
   background: #f4f4f4;
@@ -169,7 +173,7 @@ p {
 }
 
 #navbar .menu-burguer {
-  /* display: none; */
+  display: none;
   /* opacity: 0; */
 }
 #navbar .menu-burguer:hover{
@@ -238,7 +242,8 @@ p {
 }
 
 #about .about-img {
-  background: url("../images/cept\ cover.png") no-repeat center center/cover;
+  /* background: url("../images/cept\ cover.png") no-repeat center center/cover; */
+  background: url("../images/cept\ cover2.png") no-repeat center center/cover;
 }
 
 /* Section: Clients */
@@ -330,6 +335,7 @@ p {
   width: 100%;
 }
 
+/* contacto  pelo whatsapp */
 .wa-me {
   position: fixed;
   top: 80vh;
@@ -355,6 +361,51 @@ p {
 
 }
 
+/* rodape */
+footer{
+  padding: 2rem;
+}
+footer .footer-content{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 2fr;
+}
+footer .footer-content div h2{
+  font-size: 1.1rem;
+  text-align: left;
+}
+footer .footer-content div img{
+  text-align: left;
+}
+footer .footer-content div ul li,
+footer .footer-content div p {
+  list-style: none;
+  transition: all .2s ease-in;
+  text-align: left;
+}
+footer .footer-content div ul li a,
+footer .footer-content div p a{
+  font-size: 1rem;
+  color: #fff;
+}
+footer .footer-content div ul li:hover,
+footer .footer-content div p:hover{
+  cursor: pointer;
+  transform: translateY(-2px);
+}
+footer .footer-content div .social-media{
+  display: flex;
+  justify-content: center;
+  gap: 2.8rem;
+  margin-block: 1rem;
+  color: #fff;
+}
+footer .footer-content div .social-media a{
+  color: #fff;
+}
+footer .footer-content div:nth-child(4) .btn-contact{
+  border-radius: 10px;
+}
+/* animacoes */
 @keyframes whatsapp {
   0% {
     background-color: #128adb;
@@ -371,4 +422,52 @@ p {
     transform: scale(0);
     position: 70vh;
   }
+}
+
+#faq {
+  background-color: var(--st4-color);
+  /* background-color: #fff; */
+  padding: 1rem;
+}
+.accordion .questions {
+  position: relative;
+  margin: 2rem 0;
+  color: #000;
+}
+.accordion .questions .label {
+  padding: 0.5rem;
+  background-color: #128adb;
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-weight: 500;
+  transition: all 0.3s;
+  color: #fff;
+}
+.accordion .questions .label:hover {
+  background-color: #05609c;
+}
+.accordion .questions .label::after {
+  content: "+";
+  position: absolute;
+  right: 10px;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+.accordion .questions.active-label .label::after {
+  content: "-";
+}
+.accordion .questions .label-cont {
+  position: relative;
+  background-color: var(--light-green-color);
+  color: #fff;
+  line-height: 1.2rem;
+  height: 0px;
+  overflow: hidden;
+  transition: 0.5s;
+  /* overflow-y: scroll; */
+}
+.accordion .questions.active-label .label-cont {
+  padding: 1rem;
+  height: 100px;
+  /* height: 100%; */
 }
