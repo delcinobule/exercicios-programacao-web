@@ -37,7 +37,7 @@
 @media (max-width: 500px) {
   #navbar {
     position: fixed;
-    /* flex-direction: column; */
+    justify-content: space-between;
     align-items: center;
     width: 100%;
   }
@@ -49,28 +49,35 @@
 
   #navbar .logo img {
     width: 100%;
+    display: none;
   }
 
   #navbar ul.menu-burguer-container {
     position: absolute;
-    /* font-size: 1rem; */
+    font-size: 1rem;
     display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    top: 120px;
-    left: 0;
-    background-color: rgba(0, 0, 0, 0.8);
+    /* flex-direction: column; */
+    gap: 0;
+    top: -45vh;
+    right: 0;
+    /* background-color: rgba(0, 0, 0, 0.8); */
     width: 100%;
     height: 100vh;
-    display: none;
+    /* display: none; */
   }
-
+#navbar ul label #theme{
+ font-size: 1rem;
+ padding: 0.1rem;
+}
+#navbar ul label #theme option{
+ font-size: 1rem;
+}
   #navbar ul li {
     padding-blocK: 0.4rem;
   }
 
   #navbar .menu-burguer {
-    display: block;
+    display: none;
   }
 
   #navbar label {
@@ -129,7 +136,7 @@
 
   .wa-me {
     position: fixed;
-    top: 70vh;
+    top: 80vh;
   }
 
 }
