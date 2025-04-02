@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário de Contacto com Uploád de Arquivo</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body id="form-user">
+    <nav class="nav-bar" id="nav-product">
+      <h2>Upload</h2>
+      <ul>
+        <li><a href="form-pizza.html">Pizza</a></li>
+        <li><a href="form-usuario.html">Usuario</a></li>
+        <li><a href="form-evento.html">Evento</a></li>
+        <li><a href="form-producto.html">Producto</a></li>
+      </ul>
+    </nav>
+
+    <header id="h-upload">
+      <h1 class="texto-principal" id="texto-pizza">
+        Formulário de Contacto com Upload de Arquivo
+      </h1>
+      <div class="shadow"></div>
+    </header>
+
+    <section>
+      <form action="" id="form-group-upload">
+        <fieldset>
+          <legend>Dados do Producto</legend>
+          <div class="form-group">
+            <label for="name">Nome do Producto</label>
+            <input type="text" name="name" id="name" required />
+          </div>
+          <div class="input-inline">
+            <label for="email">Avaliação</label>
+            <input type="number" name="email" id="email" required />
+          </div>
+          <div class="form-group">
+            <label for="topic">Assunto</label>
+            <input type="text" name="name" id="topic" required />
+          </div>
+          <div class="form-group">
+            <label for="gender">Mensagem</label>
+            <textarea
+              name=""
+              id=""
+              placeholder="Digite sua mensagem"
+              rows="5"
+              required
+            ></textarea>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Upload</legend>
+          <div class="input-inline">
+            <label for="upload">Anexo</label>
+            <input type="file" name="" id="upload" required />
+          </div>
+        </fieldset>
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+    <footer id="footer-product">
+      <p>Copywrite &copy; Todos Direitos Reservados - 2025</p>
+    </footer>
+  </body>
+</html>

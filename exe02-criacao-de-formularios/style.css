@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Paytone+One&display=swap');
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* form-pizza */
+  --text-color-pizza: #ff6347;
+  --btn-bg-pizza: #ff44009a;
+  --bg-pizza: linear-gradient(to left, rgb(168, 28, 19), rgb(197, 170, 17));
+
+  /* form-user */
+  --bg-user: #484974;
+  --text-color-user: #4E577B;
+  
+  /* form-event */
+  --bg-event: #2A0953;
+  --bg-gradient-event: linear-gradient(to right, #2A0953, #0F577B);
+  /* --text-color-event: #0F577B; */
+  --text-color-event: #2A0953;
+  
+  /* form-product */
+  --bg-product: #264D75;
+  --text-color-product: #73531E;
+
+  /* form-upload */
+  --text-color-upload: #0F577B;
+}
+
+/* classes utilitarias */
+/* .field-block{
+ 
+} */
+.radio-block {
+  line-height: 2rem;
+}
+/* elementos gerais */
+
+header {
+  position: relative;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+header .shadow {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 50vh;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+  font-weight: 400;
+  font-style: normal;
+  font-size: 3rem;
+  text-align: center;
+  z-index: 1;
+  text-transform: capitalize;
+}
+button[type="submit"] {
+  border-radius: 10px;
+  border: none;
+  padding: 0.7rem;
+  color: #fff;
+  font-weight: 600;
+  width: 100%;
+  transition: all 0.3s ease-out;
+}
+button:hover {
+  cursor: pointer;
+  font-size: 1.3rem;
+}
+/* formulario-pizza */
+header#h-pizza {
+  background-image: url("https://www.shutterstock.com/image-photo/tasty-pepperoni-pizza-cooking-ingredients-260nw-1233657127.jpg");
+}
+header#h-user{
+    background-image: url("https://img.freepik.com/premium-vector/online-registration-sign-up-with-man-standing-near-user-interface_268404-96.jpg?semt=ais_hybrid");
+}
+header#h-product{
+    background-image: url("https://www.shutterstock.com/image-illustration/3d-shopping-bag-five-star-260nw-2146958615.jpg");
+}
+header#h-event{
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRr6oxVhd12ukxYcdLC55X7iVLrywvT8OTFhw&s");
+}
+header#h-upload{
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREEYb7YMP6gK9NmZWqE5OTOvEsciaOQ8aXkQ&s");
+}
+h1{
+  font-family: "Paytone One", sans-serif;
+  color: #fff;
+}
+form {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* cores do texto de cada formulario */
+form#form-group-pizza {
+  color: var(--text-color-pizza);
+}
+form#form-group-user {
+  color: var(--text-color-user);
+}
+form#form-group-event {
+  color: var(--text-color-event);
+}
+form#form-group-product {
+  color: var(--text-color-event);
+}
+form#form-group-upload {
+  color: var(--text-color-upload);
+}
+
+/* cores do butao de cada formulario */
+form#form-group-pizza button {
+  background-color: var(--text-color-pizza);
+}
+form#form-group-user button {
+  background-color: var(--bg-user);
+}
+form#form-group-product button {
+  background-color: var(--bg-product);
+}
+form#form-group-event button {
+  background-color: var(--bg-event);
+}
+form#form-group-upload button {
+  background-color: var(--bg-product);
+}
+
+/* navbar */
+nav.nav-bar {
+  position: sticky;
+  top: 0;
+  padding: 1.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  z-index: 10;
+}
+nav#nav-pizza {
+  background: var(--bg-pizza);
+}
+nav#nav-user{
+    background: var(--bg-user);
+}
+nav#nav-product{
+    background: var(--bg-product);
+}
+nav#nav-event{
+    background: var(--bg-gradient-event);
+}
+.nav-bar h2 {
+  font-size: 1.9rem;
+  color: #fff;
+}
+.nav-bar ul {
+  display: flex;
+}
+.nav-bar ul li:not(.nav-bar ul li:first-child) {
+  margin-left: 3rem;
+}
+.nav-bar ul li {
+  list-style: none;
+  transition: all 0.2s ease;
+}
+.nav-bar ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+.nav-bar ul li:hover {
+  transform: translateY(-3px);
+}
+
+section form {
+  padding: 0.8rem;
+  border-radius: 5px;
+  box-shadow: 0px 5px 15px 5px rgba(0, 0, 0, 0.7);
+}
+form fieldset {
+  margin-block: 1rem;
+  padding: 0.5rem;
+  border-radius: 3px;
+  font-size: 1.1rem;
+}
+form#form-group-pizza fieldset{
+    border: 1px solid rgba(255, 166, 0, 0.596);
+}
+form#form-group-event fieldset{
+    border: 1px solid var(--bg-event);
+}
+form legend::after{
+    content: " * ";
+    color: red;
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-inline: 0.5rem;
+}
+form fieldset legend {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+form .form-group select {
+  border: none;
+  padding: 0.3rem;
+  border-radius: 5px;
+  font-weight: 700;
+  width: 200px;
+  color: #fff;
+  font-size: 1rem;
+}
+form .form-group select#piz-pay,
+form .form-group select#piz-size {
+    background-color: var(--btn-bg-pizza);
+}
+form .form-group select#gender {
+    background-color: var(--bg-user);
+}
+form .form-group select#event-participation {
+    background-color: var(--bg-event);
+}
+form .form-group {
+  display: flex;
+  flex-direction: column;
+  line-height: 2rem;
+}
+form .input-inline{
+    margin-block: 1rem;
+    display: flex;
+    align-items: center;
+}
+form .input-inline input{
+    width: 100%;
+    margin-left: 0.5rem;
+}
+form .form-group input,
+form .input-inline input,
+form textarea{
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+section {
+  margin: auto;
+  max-width: 800px;
+  padding: 1rem;
+}
+
+
+
+/* rodape */
+
+footer {
+    text-align: center;
+    color: #fff;
+    padding: 1rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+  }
+footer#footer-pizza{
+    background: var(--bg-pizza);
+}
+footer#footer-user{
+    background: var(--bg-user);
+}
+footer#footer-product{
+    background:var(--bg-product);
+}
+footer#footer-event{
+    background: var(--bg-gradient-event);
+}
+footer#footer-upload{
+    background: linear-gradient(to left, rgb(168, 28, 19), rgb(197, 170, 17));
+}
+
